@@ -4,9 +4,9 @@ MAINTAINER Leandro David Cacciagioni - <leandro.21.2008@gmail.com>
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt-get update && \
   apt-get dist-upgrade -qqy && \
-  apt-get install -qqy --no-install-recommends wget && \
+  apt-get install -qqy --no-install-recommends wget ca-certificates && \
   mkdir /rust && \
-  wget --no-check-certificate https://static.rust-lang.org/dist/rust-1.2.0-x86_64-unknown-linux-gnu.tar.gz -O /rust/rust-1.2.0-x86_64-unknown-linux-gnu.tar.gz && \
+  wget https://static.rust-lang.org/dist/rust-1.2.0-x86_64-unknown-linux-gnu.tar.gz -O /rust/rust-1.2.0-x86_64-unknown-linux-gnu.tar.gz && \
   cd /rust && \
   tar xzfv ./rust-1.2.0-x86_64-unknown-linux-gnu.tar.gz && \
   cd rust-1.2.0-x86_64-unknown-linux-gnu && \
