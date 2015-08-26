@@ -1,5 +1,7 @@
 # Rust
 
+[![](https://badge.imagelayers.io/extremedevops/rust:latest.svg)](https://imagelayers.io/?images=extremedevops/rust:latest 'Get your own badge on imagelayers.io')
+
 Rust is a systems programming language that runs blazingly fast, prevents nearly all segfaults, and guarantees thread safety.
 
 **Featuring**
